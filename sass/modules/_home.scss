@@ -1,0 +1,124 @@
+@import '../vars';
+
+.navbar {
+    background: $ippolito-blue;
+}
+
+.nav-link {
+    color: $white !important;
+    font-weight: 700;
+}
+
+#hero {
+    height: 90vh;
+    background: url('/images/bg.JPG');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.hero-title {
+    font-weight: 700;
+    color: white;
+    font-size: 72px;
+    font-family: $ippolito-font;
+}
+
+.hero-description {
+    max-width: 600px;
+    color: white;
+}
+
+.stat-con {
+    background: $white;
+    height: 150px;
+
+    h1 {
+        color: $dark-grey;
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        padding-top: 16px;
+        font-family: $ippolito-font;
+    }
+
+    hr {
+        width: 60px;
+        border: 4px solid;
+        color: #4074F7;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 24px;
+        color: $ippolito-blue;
+        font-family: $ippolito-font;
+    }
+}
+
+#about {
+    background: $light-grey;
+
+    h3 {
+        font-family: $ippolito-font;
+        font-weight: 500;
+        color: $dark-grey;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-family: $ippolito-font;
+        font-weight: 700;
+        color: $ippolito-blue;
+    }
+
+    li {
+        font-family: $ippolito-font;
+        font-weight: 500;
+        color: $dark-grey;
+        font-size: 16px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.ippolito-img {
+    width: 518px;
+    height: 418px;
+}
+
+.check-icon {
+    color: $ippolito-blue;
+    font-size: 24px;
+    padding-right: 8px;
+}
+
+.btn-service {
+    background: $white;
+    height: 150px;
+    border: 1px solid #F5F5F5 !important;
+    font-family: $ippolito-font !important;
+    font-weight: 700 !important;
+    color: #ABABAB !important;
+    font-size: 24px !important;
+}
+
+.active {
+    background: $ippolito-blue !important;
+    color: white !important;
+}
+
+.ippolito-heading {
+    font-weight: 700;
+    color: $dark-grey;
+    font-size: 48px;
+    font-family: $ippolito-font;
+    text-align: center !important;
+    margin: 0 auto;
+}
