@@ -1,0 +1,43 @@
+footer {
+    background: $ippolito-blue;
+
+    p {
+        color: white !important;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    h3 {
+        color: white;
+        font-family: $ippolito-font;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .nav-link {
+        font-weight: 300;
+    }
+
+    .nav-link a:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-logo {
+    max-width: 120px;
+}
+
+.footer-hr {
+    border: 2px solid #4074F7;
+}
+
+#footer-bottom {
+    border-top: 1px solid white;
+    height: 50px;
+    background: $ippolito-blue;
+
+    p {
+        color: white;
+        font-size: 14px;
+    }
+}

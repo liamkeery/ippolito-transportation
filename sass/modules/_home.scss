@@ -122,3 +122,26 @@
     text-align: center !important;
     margin: 0 auto;
 }
+
+.card-btn {
+    width: 250px;
+    margin: 0 auto;
+}
+
+#flatbed {
+    h2 {
+        font-size: 36px;
+        color: $ippolito-blue;
+        font-family: $ippolito-font;
+        font-weight: 700;
+    }
+
+    p {
+        max-width: 800px;
+    }
+
+    .card {
+        border: none;
+        border-top: 8px solid #24428D;
+    }
+}
