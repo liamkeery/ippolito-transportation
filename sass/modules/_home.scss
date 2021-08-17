@@ -11,7 +11,7 @@
 
 #hero {
     height: 90vh;
-    background: url('/images/bg.JPG');
+    background: url('/images/bg-i.JPG');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -128,7 +128,7 @@
     margin: 0 auto;
 }
 
-#flatbed {
+.collapse-content {
     h2 {
         font-size: 36px;
         color: $ippolito-blue;
@@ -144,4 +144,38 @@
         border: none;
         border-top: 8px solid #24428D;
     }
+}
+
+.quote-con {
+    background: white;
+}
+
+.form-heading {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $ippolito-font;
+    color: $ippolito-blue;
+}
+
+.form-label {
+    font-weight: 700;
+    font-family: $ippolito-font;
+    color: #333333;
+    font-size: 16px;
+}
+
+.btn-form {
+    padding: 16px !important;
+    background: $white !important;
+    width: 250px;
+    color: #333333 !important;
+    border: 1px solid #efefef !important;
+    font-weight: 700 !important;
+}
+
+.form-btn-active {
+    background: $ippolito-blue !important;
+    color: white !important;
+    width: 250px;
+    font-weight: 700 !important;
 }

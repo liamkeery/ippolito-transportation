@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,89 +8,112 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/5a7dc109cc.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script src="https://kit.fontawesome.com/5a7dc109cc.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="images/logo.jpg" alt="Ippolito Transportation" height="50">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.jpg" alt="Ippolito Transportation"
+                height="50">
+            </a>
+            <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarText"
+              aria-controls="navbarText" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#"
+                    id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Solutions
                   </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Solutions
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">LTL Freight</a></li>
-                            <li><a class="dropdown-item" href="#">TL Freight</a></li>
-                            <li><a class="dropdown-item" href="#">Storage</a></li>
-                            <li><a class="dropdown-item" href="#">Flatbed Solutions</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Careers
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                          <li><a class="dropdown-item" href="#">Why Ippolito</a></li>
-                          <li><a class="dropdown-item" href="#">Safety</a></li>
-                          <li><a class="dropdown-item" href="#">Community Support</a></li>
-                          <li><a class="dropdown-item" href="#">Driver Opportunities</a></li>
-                          <li><a class="dropdown-item" href="#">All Opportunities</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">About</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Resources
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                          <li><a class="dropdown-item" href="#">Fuel Surcharge</a></li>
-                          <li><a class="dropdown-item" href="#">Exchange Rate</a></li>
-                          <li><a class="dropdown-item" href="#">Claims</a></li>
-                          <li><a class="dropdown-item" href="#">Master Terms &amp; Conditions</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Customer Tools</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">News</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Contact Us</a>
-                      </li>
-                    </ul>
-                    <div class="d-flex">
-                        <a class="btn btn-primary">Call To Action</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-        </div>
-        <div class="row" id="hero">
-            <div class="col-lg-8 ps-5 position-absolute top-50">
-                <h1 class="hero-title">Ippolito Transportation</h1>
-                <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed gravida velit, eget venenatis ligula. Aliquam ac blandit purus, non bibendum purus.</p>
-                <a href="#" class="btn btn-primary">Our Solutions</a>
-                <a href="#" class="btn btn-outline-secondary">Careers</a>
+                  <ul class="dropdown-menu"
+                    aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">LTL Freight</a></li>
+                    <li><a class="dropdown-item" href="#">TL Freight</a></li>
+                    <li><a class="dropdown-item" href="#">Storage</a></li>
+                    <li><a class="dropdown-item" href="#">Flatbed Solutions</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#"
+                    id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Careers
+                  </a>
+                  <ul class="dropdown-menu"
+                    aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Why Ippolito</a></li>
+                    <li><a class="dropdown-item" href="#">Safety</a></li>
+                    <li><a class="dropdown-item" href="#">Community Support</a></li>
+                    <li><a class="dropdown-item" href="#">Driver Opportunities</a></li>
+                    <li><a class="dropdown-item" href="#">All Opportunities</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#"
+                    id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Resources
+                  </a>
+                  <ul class="dropdown-menu"
+                    aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Fuel Surcharge</a></li>
+                    <li><a class="dropdown-item" href="#">Exchange Rate</a></li>
+                    <li><a class="dropdown-item" href="#">Claims</a></li>
+                    <li><a class="dropdown-item" href="#">Master Terms &amp;
+                        Conditions</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Customer
+                    Tools</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <a class="btn btn-primary">Call To Action</a>
+              </div>
             </div>
-            <div class="row m-auto justify-content-center position-absolute top-100 end-0 translate-middle-y" id="stats">
-                <div class="col-lg-2 stat-con shadow" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-right: 1px solid #F5F5F5;">
+          </div>
+        </nav>
+      </div>
+      <div class="row" id="hero">
+        <div class="col-lg-8 ps-5 position-absolute top-50">
+          <h1 class="hero-title">Shipping Made Simple</h1>
+          <p class="hero-description">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Etiam sed gravida velit, eget venenatis ligula.
+            Aliquam ac blandit purus, non bibendum purus.</p>
+          <a href="#" class="btn btn-primary">Our Solutions</a>
+          <a href="#" class="btn btn-outline-light">Careers</a>
+        </div>
+        <div class="row m-auto justify-content-center position-absolute top-100
+          end-0 translate-middle-y" id="stats">
+          <!-- <div class="col-lg-2 stat-con shadow" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-right: 1px solid #F5F5F5;">
                     <h1>50</h1>
                     <hr>
                     <h3>Years of Service</h3>
@@ -109,215 +132,515 @@
                     <h1>10,000+</h1>
                     <hr>
                     <h3>Customers</h3>
-                </div>
-            </div>
-        </div><!-- End hero -->
-        <div class="row shadow pb-5" style="padding-top: 150px;" id="about">
-            <div class="col-lg-6 text-center">
+                </div> -->
+        </div>
+      </div><!-- End hero -->
+      <div class="row shadow pb-5 pt-5" id="about">
+        <!-- <div class="col-lg-6 text-center">
                 <img src="images/truck_1.JPG" class="img-fluid shadow rounded-1 ippolito-img" alt="Ippolito Transportation">
-            </div>
-            <div class="col-lg-6">
-                <h3>About Ippolito Transportation</h3>
-                <h1>Decades of experience,<br> ready to serve you.</h1>
-                <p>Ippolito Transportation services all 48 mainland states and Canada, offering transportation, logistics, warehouse and distribution services.</p>
-                <ul class="mt-3">
+            </div> -->
+        <div class="col-lg-5 m-auto">
+          <h3>About Ippolito Transportation</h3>
+          <h1>Decades of experience,<br> ready to serve you.</h1>
+          <p>Ippolito Transportation services all 48 mainland states and Canada,<br>
+            offering transportation, logistics, warehouse and distribution
+            services.</p>
+          <ul class="mt-3">
+            <li class="d-flex align-items-center">
+              <i class="fas fa-check-circle check-icon"></i>
+              Lorem Ipsum Dorsem Amit
+            </li>
+            <li class="d-flex align-items-center mt-2">
+              <i class="fas fa-check-circle check-icon"></i>
+              Lorem Ipsum Dorsem Amit
+            </li>
+          </ul>
+          <a class="btn btn-primary mt-4">Call To Action</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="ippolito-heading pt-5">Our Solutions</h1>
+        <div class="btn-group mt-5">
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#TL"
+            aria-expanded="false" aria-controls="TL" class="btn btn-service
+            active"><i class="fas fa-truck-moving pe-2"></i> TL Freight</button>
+          <button type="button" class="btn btn-service"
+            data-bs-toggle="collapse" data-bs-target="#LTL"
+            aria-expanded="false" aria-controls="LTL"><i class="fas fa-dolly
+              pe-2"></i> LTL Freight</button>
+          <button type="button" data-bs-toggle="collapse"
+            data-bs-target="#flatbed" aria-expanded="false"
+            aria-controls="flatbed" class="btn btn-service"><i class="fas
+              fa-dolly-flatbed pe-2"></i> Flatbed Solutions</button>
+          <button type="button" data-bs-toggle="collapse"
+            data-bs-target="#storage" aria-expanded="false"
+            aria-controls="storage" class="btn btn-service"><i class="fas
+              fa-warehouse pe-2"></i> Storage</button>
+        </div>
+      </div>
+      <div class="row" id="collapse_wrap">
+        <!-- TL -->
+        <div class="row collapse align-items-center collapse-content show"
+          data-bs-parent="#collapse_wrap" id="TL">
+          <div class="col-lg-4 pt-5 pb-5">
+            <div class="card shadow m-auto" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">What We Offer</h5>
+                <p class="card-text">
+                  <ul class="mt-3">
                     <li class="d-flex align-items-center">
-                        <i class="fas fa-check-circle check-icon"></i>
-                        Lorem Ipsum Dorsem Amit
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Reliable pickup and delivery
                     </li>
-                    <li class="d-flex align-items-center mt-2">
-                        <i class="fas fa-check-circle check-icon"></i>
-                        Lorem Ipsum Dorsem Amit
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Dry, refrigerated or reefer truckload services
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Domestic and cross-border
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Multi-drop
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Reliable technology
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Asset-based carrier with extensive 3PL carrier partners
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Extensive knowledge of market
                     </li>
                   </ul>
-                  <a class="btn btn-primary mt-4">Call To Action</a>
+                </p>
+                <a href="#" class="btn btn-primary card-btn">Get In Touch</a>
+              </div>
             </div>
+          </div>
+          <div class="col pt-5">
+            <h2 class="pb-3">Truckload Solutions</h2>
+            <p>Ippolito Transportation, we specialize in cross-border
+              temp-controlled freight. We are a Canadian, family-owned
+              transportation company. We provide competitive Truckload rates for
+              your transportation needs across North America. We are
+              asset-based, with a network of longstanding trusted 3PL carrier
+              partners. From temperature sensitive product, reefer needs or dry
+              freight we have it covered. Ippolito Transportation is a true
+              truckload carrier.</p>
+            <p>Shipping made simple! Ippolito Transportation, we pride ourselves
+              in reducing complexity for our customers. As a true truckload
+              carrier, we dispatch a driver and truck to shipper locations, load
+              in placed in trailer, then the driver bring load to destination
+              point.</p>
+          </div>
         </div>
 
-        <div class="row">
-            <h1 class="ippolito-heading pt-5">Our Solutions</h1>
-            <div class="btn-group shadow mt-5" role="group">
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#flatbed" aria-expanded="true" aria-controls="flatbed" class="btn btn-service active"><i class="fas fa-dolly-flatbed pe-2"></i> Flatbed Solutions</button>
-                <button type="button" class="btn btn-service"><i class="fas fa-truck-moving pe-2"></i> TL Freight</button>
-                <button type="button" class="btn btn-service"><i class="fas fa-dolly pe-2"></i> LTL Freight</button>
-                <button type="button" class="btn btn-service"><i class="fas fa-warehouse pe-2"></i> Storage</button>
+        <!-- LTL -->
+        <div class="row collapse align-items-center collapse-content"
+          data-bs-parent="#collapse_wrap" id="LTL">
+          <div class="col-lg-4 pt-5 pb-5">
+            <div class="card shadow m-auto" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">What We Offer</h5>
+                <p class="card-text">
+                  <ul class="mt-3">
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Reliable pickup and delivery
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Accurate invoicing
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Dry and refrigerated LTL services
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Domestic and cross-border LTL
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Real time tracking
+                    </li>
+                    <li class="d-flex align-items-center mt-3">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Asset-based carrier with extensive 3PL carrier partners
+                    </li>
+                  </ul>
+                </p>
+                <a href="#" class="btn btn-primary card-btn">Get In Touch</a>
+              </div>
             </div>
+          </div>
+          <div class="col pt-5">
+            <h2 class="pb-3">Less-than-Truckload Solutions (LTL)</h2>
+            <p>Ippolito Transportation, we specialize in cross-border
+              temp-controlled freight. We “get” food and we “get” produce
+              because we were created two decades ago to serve our own sister
+              produce company. We know how to deliver for customers demanding
+              the strictest protocols on quality control and food safety. We are
+              asset-based with a focus on refrigerated equipment and facilities
+              offering maximum flexibility, security, and control. We also do
+              3PL with a network of longstanding trusted carrier partners. We do
+              move refrigerated and dry LTL in all verticals.</p>
+            <p>At Ippolito Transportation, we are committed to providing you the
+              best service in the industry 24X7, 364 days a day. To accomplish
+              this, we have established a Logistics Coordinators team of highly
+              trained professionals dedicated to responding to your needs and
+              delivering superior value.</p>
+            <p>Consolidate less-than-truckload (LTL) provides cost effective
+              solutions. Our rates are based on load consolidation to reduce
+              your LTL costs. We do not price on density or class. Shipping made
+              simple! Ippolito Transportation, we pride ourselves in reducing
+              complexity for our customers.</p>
+          </div>
         </div>
 
-        <div class="row collapse show align-items-center" id="flatbed">
-            <div class="col-lg-4 pt-5 pb-5">
-                <div class="card shadow  m-auto" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">What We Offer</h5>
-                      <p class="card-text">
-                        <ul class="mt-3">
-                            <li class="d-flex align-items-center">
-                                <i class="fas fa-check-circle check-icon"></i>
-                                Dedicated support for each shipment
-                            </li>
-                            <li class="d-flex align-items-center mt-2">
-                                <i class="fas fa-check-circle check-icon"></i>
-                                Reliable pickup and delivery
-                            </li>
-                            <li class="d-flex align-items-center mt-2">
-                                <i class="fas fa-check-circle check-icon"></i>
-                                Canada and USA coverage
-                            </li>
-                            <li class="d-flex align-items-center mt-2">
-                                <i class="fas fa-check-circle check-icon"></i>
-                                Accurate invoicing
-                            </li>
-                            <li class="d-flex align-items-center mt-2">
-                                <i class="fas fa-check-circle check-icon"></i>
-                                Transportation of any type of freight
-                            </li>
-                          </ul>
-                      </p>
-                      <a href="#" class="btn btn-primary card-btn">Get In Touch</a>
-                    </div>
+        <!-- Flatbed -->
+        <div class="row collapse align-items-center collapse-content"
+          data-bs-parent="#collapse_wrap" id="flatbed">
+          <div class="col-lg-4 pt-5 pb-5">
+            <div class="card shadow m-auto" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">What We Offer</h5>
+                <p class="card-text">
+                  <ul class="mt-3">
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Dedicated support for each shipment
+                    </li>
+                    <li class="d-flex align-items-center mt-2">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Reliable pickup and delivery
+                    </li>
+                    <li class="d-flex align-items-center mt-2">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Canada and USA coverage
+                    </li>
+                    <li class="d-flex align-items-center mt-2">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Accurate invoicing
+                    </li>
+                    <li class="d-flex align-items-center mt-2">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Transportation of any type of freight
+                    </li>
+                  </ul>
+                </p>
+                <a href="#" class="btn btn-primary card-btn">Get In Touch</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-5">
+            <h2 class="pb-3">Ippolito Flatbed Solutions</h2>
+            <p>When it comes to specialized commodities like heavy equipment and
+              construction materials, or simply loads that are larger than a van
+              or require crane-loading, Ippolito Transportation has a Flatbed
+              division to meet your needs. Our team works with 3PL exclusively
+              for all your Flatbed freight for safe, timely, and secure
+              delivery.</p>
+            <p>At Ippolito Transportation, we provide our customers with access
+              to flatbed capacity anywhere in Canada and United States. We
+              understand that requirements differ for each customer. Shipping
+              made simple! </p>
+            <p>We are happy to review your business needs and develop a solution
+              for you. Contact us today.</p>
+          </div>
+        </div>
+
+        <!-- Storage -->
+        <div class="row collapse align-items-center collapse-content"
+          data-bs-parent="#collapse_wrap" id="storage">
+          <div class="col-lg-4 pt-5 pb-5">
+            <div class="card shadow m-auto" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">What We Offer</h5>
+                <p class="card-text">
+                  <ul class="mt-3">
+                    <li class="d-flex align-items-center">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Dedicated support for each shipment
+                    </li>
+                    <li class="d-flex align-items-center mt-2">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Reliable pickup and delivery
+                    </li>
+                    <li class="d-flex align-items-center mt-2">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Accurate invoicing
+                    </li>
+                    <li class="d-flex align-items-center mt-2">
+                      <i class="fas fa-check-circle check-icon"></i>
+                      Transportation of any type of freight
+                    </li>
+                  </ul>
+                </p>
+                <a href="#" class="btn btn-primary card-btn">Get In Touch</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-5">
+            <h2 class="pb-3">Storage/Cold Storage Solutions</h2>
+            <p>At Ippolito Transportation, our cold storage provides a key
+              advantage for our customers. We can handle significant storage and
+              transportation/logistics needs. We are fully equipped to manage
+              any seasonal surges. Our state-of-the-art facility offers food
+              producers, manufacturers, distributers, importers, exporters, and
+              retailers tailored, flexible solutions and quick storage
+              turnaround to meet any requirements.</p>
+            <p>Whatever your storage/cold storage needs are Ippolito
+              Transportation work with you to help you achieve your goals.
+              Shipping made simple! Ippolito Transportation, we pride ourselves
+              in reducing complexity for our customers.</p>
+            <p class="pb-3">Available in Ontario and Quebec.</p>
+          </div>
+        </div>
+      </div><!-- Collapse Wrap End -->
+
+      <div class="row mb-5 mt-5">
+        <div class="col-lg-8 quote-con rounded-1 shadow m-auto">
+          <h1 class="text-center ippolito-heading mt-4">Get Started</h1>
+          
+          <div class="col-lg-12 btn-group mb-5 mt-5" role="group" id="form-nav">
+            <button type="button" class="btn form-btn-active">Request a Quote</button>
+            <button type="button" class="btn btn-form">Contact Sales</button>
+          </div>
+        
+          <div class="col-lg-8 m-auto">
+            <form class="row align-items-center">
+              <h3 class="form-heading">Personal Details</h3>
+              <hr>
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="first_name" class="form-label">First Name:</label>
+                  <input type="text" class="form-control" id="first_name"
+                    placeholder="First Name">
+                </div>
+                <div class="col-lg-6">
+                  <label for="last_name" class="form-label">Last Name:</label>
+                  <input type="text" class="form-control" id="last_name"
+                    placeholder="Last Name">
+                </div>
+              </div>
+
+              <div class="row pt-3">
+                <div class="col-lg-6">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email"
+                    placeholder="Email">
+                </div>
+                <div class="col-lg-6 pl-2">
+                  <label for="phone_number" class="form-label">Phone Number:</label>
+                  <input type="tel" class="form-control" id="phone_number"
+                    placeholder="Phone Number">
+                </div>
+              </div>
+              <h3 class="pt-4 form-heading">Shipment Details</h3>
+              <hr>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <label class="form-label">Shipment Type:</label>
+                  <br>
+                  <div class="form-check form-check-inline pt-2">
+                    <input class="form-check-input" type="radio"
+                      name="inlineRadioOptions" id="inlineRadio1"
+                      value="option1">
+                    <label class="form-check-label form-label" for="inlineRadio1">TL
+                      Freight</label>
                   </div>
-            </div>
-            <div class="col pt-5">
-              <h2 class="pb-3">Ippolito Flatbed Solutions</h2>
-              <p>When it comes to specialized commodities like heavy equipment and construction materials, or simply loads that are larger than a van or require crane-loading, Ippolito Transportation has a Flatbed division to meet your needs.  Our team works with 3PL exclusively for all your Flatbed freight for safe, timely, and secure delivery.</p>
-              <p>At Ippolito Transportation, we provide our customers with access to flatbed capacity anywhere in Canada and United States. We understand that requirements differ for each customer. Shipping made simple! </p>
-              <p>We are happy to review your business needs and develop a solution for you. Contact us today.</p>
-            </div>
-        </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"
+                      name="inlineRadioOptions" id="inlineRadio2"
+                      value="option2">
+                    <label class="form-check-label form-label" for="inlineRadio2">LTL
+                      Freight</label>
+                  </div>
+                </div>
 
-    <footer class="row pt-4 pb-4">
-      <div class="col">
-        <img src="/images/logo.jpg" alt="Ippolito Transportation Logo" class="footer-logo">
-        <hr class="footer-hr">
-        <p>Ippolito Transportation Inc.
-          201 North Service Rd.
-          Burlington, ON, Canada
-          <br>
-          L7P 5C4</p>
+                <div class="col-lg-6">
+                  <label for="company" class="form-label">Company Name:</label>
+                  <input type="text" class="form-control" id="company"
+                    placeholder="Company">
+                </div>
+              </div>
+
+              <div class="row pt-3">
+                <div class="col-lg-6">
+                  <label for="weight" class="form-label">Weight: (lbs)</label>
+                  <input type="text" class="form-control" id="weight"
+                    placeholder="Weight">
+                </div>
+                <div class="col-lg-6">
+                  <label for="phone_number" class="form-label">Ship From:</label>
+                  <input type="tel" class="form-control" id="ship_from"
+                    placeholder="Ship From">
+                </div>
+              </div>
+
+              <div class="row pt-3">
+                <div class="col-lg-12">
+                  <label for="exampleFormControlTextarea1" class="form-label">Shipment
+                    Details:</label>
+                  <textarea class="form-control"
+                    id="exampleFormControlTextarea1" placeholder="Please enter as much detail as possible about your shipment" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="col-12 pb-5 pt-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-outline-primary">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="col">
-        <h3>Solutions</h3>
-        <hr class="footer-hr">
-        <ul class="nav flex-column footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">TL Freight</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">LTL Freight</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Storage</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Flatbed</a>
-          </li>
-        </ul>
+
+      <footer class="row pt-4 pb-4">
+        <div class="col">
+          <img src="/images/logo.jpg" alt="Ippolito Transportation Logo"
+            class="ms-3 mb-4 footer-logo">
+          <!-- <hr class="footer-hr"> -->
+          <p><b>Ippolito Transportation Inc.
+              201 North Service Rd.
+              Burlington, ON, Canada
+              <br>
+              L7P 5C4</b></p>
+        </div>
+        <div class="col">
+          <h3>Solutions</h3>
+          <hr class="footer-hr">
+          <ul class="nav flex-column footer-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">TL Freight</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LTL Freight</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Storage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flatbed</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Careers</h3>
+          <hr class="footer-hr">
+          <ul class="nav flex-column footer-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Why Ippolito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Safety</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support Communities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Current Openings</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>About</h3>
+          <hr class="footer-hr">
+          <ul class="nav flex-column footer-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Green Initiatives</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accreditations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Awards &amp; Recognition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Resources</h3>
+          <hr class="footer-hr">
+          <ul class="nav flex-column footer-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Exchange Rate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fuel Surcharge</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Claims Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Claims Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Customer Tools</h3>
+          <hr class="footer-hr">
+          <ul class="nav flex-column footer-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quick Quote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pick-up Request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Forms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Credit Application</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Contact Us</h3>
+          <hr class="footer-hr">
+          <ul class="nav flex-column footer-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ippolito Sales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ippolito Operations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recruiting</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div class="row align-items-center" id="footer-bottom">
+        <p class="mt-1">Copyright © 2021 Ippolito Transportation Inc. All Rights
+          Reserved.</p>
       </div>
-      <div class="col">
-        <h3>Careers</h3>
-        <hr class="footer-hr">
-        <ul class="nav flex-column footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Why Ippolito</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Safety</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Support Communities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Current Openings</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>About</h3>
-        <hr class="footer-hr">
-        <ul class="nav flex-column footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Story</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Green Initiatives</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Accreditations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Technology</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Awards &amp; Recognition</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>Resources</h3>
-        <hr class="footer-hr">
-        <ul class="nav flex-column footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Exchange Rate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Fuel Surcharge</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Claims Policy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Claims Form</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Terms &amp; Conditions</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>Customer Tools</h3>
-        <hr class="footer-hr">
-        <ul class="nav flex-column footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Quick Quote</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pick-up Request</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Forms</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Credit Application</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>Contact Us</h3>
-        <hr class="footer-hr">
-        <ul class="nav flex-column footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ippolito Sales</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ippolito Operations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Feedback</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Recruiting</a>
-          </li>
-        </ul>
-      </div>  
-    </footer>
-    <div class="row align-items-center" id="footer-bottom">
-      <p>Copyright © 2021 Ippolito Transportation Inc. All Rights Reserved.</p>
-    </div>
 
 
     </div><!-- End container -->
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
