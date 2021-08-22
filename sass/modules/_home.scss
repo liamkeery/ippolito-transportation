@@ -17,6 +17,15 @@
     background-size: cover;
 }
 
+#half-hero {
+    height: 50vh;
+    background: url('/images/bg-i.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 120px;
+}
+
 .hero-title {
     font-weight: 700;
     color: white;
@@ -107,6 +116,7 @@
     font-weight: 700 !important;
     color: #ABABAB !important;
     font-size: 24px !important;
+    width: 250px;
 }
 
 .active {
@@ -178,4 +188,14 @@
     color: white !important;
     width: 250px;
     font-weight: 700 !important;
+}
+
+#tools {
+    h2 {
+        color: $ippolito-blue;
+    }
+
+    hr {
+        color: #acacac;
+    }
 }
