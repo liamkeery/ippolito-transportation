@@ -1,0 +1,85 @@
+@import './vars';
+
+#green_initiatives {
+    h3 {
+        font-family: $ippolito-font;
+        font-weight: 500;
+        color: $dark-grey;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-family: $ippolito-font;
+        font-weight: 700;
+        color: $ippolito-blue;
+    }
+}
+
+#blue_con {
+    background: $ippolito-blue;
+
+    p {
+        color: white;
+    }
+
+    .check-icon {
+        color: white;
+    }
+
+    ul li {
+        color: white;
+    }
+
+    ul {
+        padding-left: 0 !important;
+    }
+}
+
+#accreditations {
+    h3 {
+        font-family: $ippolito-font;
+        font-weight: 500;
+        color: $dark-grey;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-family: $ippolito-font;
+        font-weight: 700;
+        color: $ippolito-blue;
+    }
+
+    hr { 
+      border: solid 1px;
+      color: #E5E5E5;
+    }
+}
+
+.accreditations-img {
+    max-width: 200px !important;
+    padding: 24px;
+}
+
+#technology {
+    background: $light-grey;
+
+    h3 {
+        font-family: $ippolito-font;
+        font-weight: 500;
+        color: $dark-grey;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-family: $ippolito-font;
+        font-weight: 700;
+        color: $ippolito-blue;
+    }
+}
+
+#technology_desc {
+    h3 {
+        color: $digital-blue;
+        font-size: 24px;
+    }
+}
