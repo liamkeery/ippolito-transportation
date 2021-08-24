@@ -1,0 +1,34 @@
+@import './vars';
+
+#directory {
+    background: #EFEFEF;
+
+    .btn {
+        color: $ippolito-blue !important;
+        border: 1px solid #dfdfdf !important;
+        background: white;
+        width: 290px !important;
+    }
+
+    h1 {
+        font-family: $ippolito-font;
+        font-weight: 700;
+        color: $ippolito-blue;
+    }
+}
+
+.hr-light {
+    color: #acacac;
+}
+
+.contact-con {
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+
+    h1 {
+        font-family: $ippolito-font;
+        font-weight: 700;
+        color: $ippolito-blue;
+    }
+}
+
