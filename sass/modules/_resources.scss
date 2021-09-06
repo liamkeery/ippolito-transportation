@@ -1,0 +1,76 @@
+@import '../vars';
+
+#resources {
+    background: $light-grey;
+
+    h3 {
+        font-family: $ippolito-font;
+        font-weight: 500;
+        color: $dark-grey;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-family: $ippolito-font;
+        font-weight: 700;
+        color: $ippolito-blue;
+    }
+}
+
+.fuel {
+    background: $ippolito-blue;
+    color: white;
+}
+
+.exchange {
+    background: $ippolito-blue;
+    color: white;
+}
+
+.rate-card {
+    color: white !important;
+    background: $ippolito-blue !important;
+
+    .text-muted {
+        color: white !important;
+    }
+}
+
+.img-btn {
+    background: $digital-blue;
+    color: white;
+    padding: 24px;
+    height: 100px;
+    width: 300px;
+    font-weight: 700;
+}
+
+.resources-h1 {
+    font-family: $ippolito-font;
+    font-weight: 700;
+    color: $ippolito-blue;
+}
+
+.claims-policy {
+    background-image: url(/images/forklift-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding-left: 0 !important;
+}
+
+.claims-form {
+    background-image: url(/images/shelves.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding-left: 0 !important;
+}
+
+.master-terms {
+    background-image: url(/images/truck_1.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding-left: 0 !important;
+}
