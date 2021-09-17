@@ -198,4 +198,35 @@
     hr {
         color: #acacac;
     }
+
+    .btn-group, .btn-group-vertical {
+        display: block !important;
+        text-align: center;
+    }
+}
+
+#tools-page {
+    #half-hero {
+        height: auto !important;
+    }
+}
+
+.news-h1 {
+    font-family: $ippolito-font;
+    font-weight: 700;
+    color: $ippolito-blue;
+}
+
+#news {
+    #half-hero {
+        height: auto !important;
+    }
+
+    #news-con {
+        padding-left: 0px !important;
+    }
+
+    .news-h1 {
+        padding-left: 8px;
+    }
 }
