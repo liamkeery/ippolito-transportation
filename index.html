@@ -16,6 +16,34 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/5a7dc109cc.js"
       crossorigin="anonymous"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_TvQZmC29JKBWmSwMlLWNx");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('quote-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the quote_number variable
+              this.quote_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('test_service', 'test_template', this)
+                  .then(function() {
+                      var validation = document.getElementById('validation');
+                      validation.classList.remove("d-none");
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      var error = document.getElementById('validation_error');
+                      error.classList.remove("d-none");
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script>
   </head>
   <body>
     <div class="container-fluid">
@@ -45,10 +73,13 @@
                   </a>
                   <ul class="dropdown-menu"
                     aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="index.html#solutions">LTL Freight</a></li>
-                    <li><a class="dropdown-item" href="index.html#solutions">TL Freight</a></li>
+                    <li><a class="dropdown-item" href="index.html#solutions">LTL
+                        Freight</a></li>
+                    <li><a class="dropdown-item" href="index.html#solutions">TL
+                        Freight</a></li>
                     <li><a class="dropdown-item" href="index.html#solutions">Storage</a></li>
-                    <li><a class="dropdown-item" href="index.html#solutions">Flatbed Solutions</a></li>
+                    <li><a class="dropdown-item" href="index.html#solutions">Flatbed
+                        Solutions</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -59,11 +90,16 @@
                   </a>
                   <ul class="dropdown-menu"
                     aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="careers.html#why-ippolito">Why Ippolito</a></li>
+                    <li><a class="dropdown-item"
+                        href="careers.html#why-ippolito">Why Ippolito</a></li>
                     <li><a class="dropdown-item" href="careers.html#safety">Safety</a></li>
-                    <li><a class="dropdown-item" href="careers.html#community">Community Support</a></li>
-                    <li><a class="dropdown-item" href="careers.html#drivers">Driver Opportunities</a></li>
-                    <li><a class="dropdown-item" href="https://www.ippolitogroup.com/careers.php">All Opportunities</a></li>
+                    <li><a class="dropdown-item" href="careers.html#community">Community
+                        Support</a></li>
+                    <li><a class="dropdown-item" href="careers.html#drivers">Driver
+                        Opportunities</a></li>
+                    <li><a class="dropdown-item"
+                        href="https://www.ippolitogroup.com/careers.php">All
+                        Opportunities</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -77,10 +113,13 @@
                   </a>
                   <ul class="dropdown-menu"
                     aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="resources.html#fuel">Fuel Surcharge</a></li>
-                    <li><a class="dropdown-item" href="resources.html#exchange">Exchange Rate</a></li>
+                    <li><a class="dropdown-item" href="resources.html#fuel">Fuel
+                        Surcharge</a></li>
+                    <li><a class="dropdown-item" href="resources.html#exchange">Exchange
+                        Rate</a></li>
                     <li><a class="dropdown-item" href="resources.html#claims">Claims</a></li>
-                    <li><a class="dropdown-item" href="resources.html#terms">Master Terms &amp;
+                    <li><a class="dropdown-item" href="resources.html#terms">Master
+                        Terms &amp;
                         Conditions</a></li>
                   </ul>
                 </li>
@@ -92,7 +131,8 @@
                   <a class="nav-link" aria-current="page" href="news.html">News</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                  <a class="nav-link" aria-current="page" href="contact.html">Contact
+                    Us</a>
                 </li>
               </ul>
               <div class="d-flex d-none d-sm-block">
@@ -105,9 +145,14 @@
       <div class="row" id="hero">
         <div class="col-lg-8 ps-5" id="hero-content" style="margin-top: 300px;">
           <h1 class="hero-title">Shipping Made Simple</h1>
-          <p class="hero-description">Ippolito Transportation is an asset-based carrier and full-service logistics provider, specializing in time sensitive and temperature-controlled LTL and TL freight solutions, operating across Canada and the United States.  We pride ourselves on reducing complexity for our customers.</p>
+          <p class="hero-description">Ippolito Transportation is an asset-based
+            carrier and full-service logistics provider, specializing in time
+            sensitive and temperature-controlled LTL and TL freight solutions,
+            operating across Canada and the United States. We pride ourselves on
+            reducing complexity for our customers.</p>
           <a href="#solutions" class="btn btn-primary">Solutions</a>
-          <a href="https://www.ippolitogroup.com/careers.php" class="btn btn-outline-light">Careers</a>
+          <a href="https://www.ippolitogroup.com/careers.php" class="btn
+            btn-outline-light">Careers</a>
         </div>
         <div class="row m-auto justify-content-center position-absolute top-100
           end-0 translate-middle-y" id="stats">
@@ -140,7 +185,11 @@
         <div class="col-lg-5 m-auto">
           <h3>About Ippolito Transportation</h3>
           <h1>Decades of experience,<br> ready to serve you.</h1>
-          <p>Ippolito Transportation is a Canadian family-owned transportation company. We provide competitive rates for your transportation needs across North America. We are asset-based, with a network of longstanding trusted 3PL carrier partners. From temperature sensitive product, reefer needs or dry freight we have you covered.</p>
+          <p>Ippolito Transportation is a Canadian family-owned transportation
+            company. We provide competitive rates for your transportation needs
+            across North America. We are asset-based, with a network of
+            longstanding trusted 3PL carrier partners. From temperature
+            sensitive product, reefer needs or dry freight we have you covered.</p>
           <ul class="mt-3">
             <li class="d-flex align-items-center">
               <i class="fas fa-check-circle check-icon"></i>
@@ -153,7 +202,7 @@
             <li class="d-flex align-items-center mt-3">
               <i class="fas fa-check-circle check-icon"></i>
               Domestic & cross-border, with multi-drop
-            </li> 
+            </li>
             <li class="d-flex align-items-center mt-3">
               <i class="fas fa-check-circle check-icon"></i>
               Extensive market knowledge
@@ -412,41 +461,45 @@
       <div class="row mb-5 mt-5" id="quick_quote">
         <div class="col-lg-8 quote-con rounded-1 shadow m-auto">
           <h1 class="text-center ippolito-heading mt-4">Get Started</h1>
-          
+
           <div class="row justify-content-center">
-          <div class="col-lg-8 btn-group mb-5 mt-5" role="group" id="form-nav">
-            <button type="button" class="btn form-btn-active">Request a Quote</button>
-            <a href="mailto:ship@ippolito.biz" class="btn btn-form">Contact Sales</a>
+            <div class="col-lg-8 btn-group mb-5 mt-5" role="group"
+              id="form-nav">
+              <button type="button" class="btn form-btn-active">Request a Quote</button>
+              <a href="mailto:ship@ippolito.biz" class="btn btn-form">Contact
+                Sales</a>
+            </div>
           </div>
-          </div>
-        
+
           <div class="col-lg-8 m-auto">
-            <form class="row align-items-center">
+            <form class="row align-items-center" id="quote-form">
+              <input type="hidden" name="quote_number">
               <h3 class="form-heading">Personal Details</h3>
+              <small class="text-muted mb-2"><span style="color: red;">*</span> Required Field</small>
               <hr>
               <div class="row">
                 <div class="col-lg-6">
-                  <label for="first_name" class="form-label">First Name:</label>
+                  <label for="first_name" class="form-label">First Name:<span style="color: red;">*</span></label>
                   <input type="text" class="form-control" id="first_name"
-                    placeholder="First Name" required>
+                    placeholder="First Name" required name="fname">
                 </div>
                 <div class="col-lg-6">
-                  <label for="last_name" class="form-label">Last Name:</label>
+                  <label for="last_name" class="form-label">Last Name:<span style="color: red;">*</span></label>
                   <input type="text" class="form-control" id="last_name"
-                    placeholder="Last Name" required>
+                    placeholder="Last Name" required name="lname">
                 </div>
               </div>
 
               <div class="row pt-3">
                 <div class="col-lg-6">
-                  <label for="email" class="form-label">Email:</label>
+                  <label for="email" class="form-label">Email:<span style="color: red;">*</span></label>
                   <input type="email" class="form-control" id="email"
-                    placeholder="Email" required>
+                    placeholder="Email" required name="email">
                 </div>
                 <div class="col-lg-6 pl-2">
-                  <label for="phone_number" class="form-label">Phone Number:</label>
+                  <label for="phone_number" class="form-label">Phone Number:<span style="color: red;">*</span></label>
                   <input type="tel" class="form-control" id="phone_number"
-                    placeholder="Phone Number" required>
+                    placeholder="Phone Number" required name="phone">
                 </div>
               </div>
               <h3 class="pt-4 form-heading">Shipment Details</h3>
@@ -454,55 +507,72 @@
 
               <div class="row">
                 <div class="col-lg-6">
-                  <label class="form-label">Shipment Type:</label>
+                  <label class="form-label">Shipment Type:<span style="color: red;">*</span></label>
                   <br>
                   <div class="form-check form-check-inline pt-2">
                     <input class="form-check-input" type="radio"
                       name="inlineRadioOptions" id="inlineRadio1"
                       value="TL_Freight" checked required>
-                    <label class="form-check-label form-label" for="inlineRadio1">TL
+                    <label class="form-check-label form-label"
+                      for="inlineRadio1">TL
                       Freight</label>
                   </div>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio"
                       name="inlineRadioOptions" id="inlineRadio2"
                       value="LTL_Freight" required>
-                    <label class="form-check-label form-label" for="inlineRadio2">LTL
+                    <label class="form-check-label form-label"
+                      for="inlineRadio2">LTL
                       Freight</label>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
-                  <label for="company" class="form-label">Company Name:</label>
+                  <label for="company" class="form-label">Company Name:<span style="color: red;">*</span></label>
                   <input type="text" class="form-control" id="company"
-                    placeholder="Company" required>
+                    placeholder="Company" required name="company">
                 </div>
               </div>
 
               <div class="row pt-3">
                 <div class="col-lg-6">
-                  <label for="weight" class="form-label">Weight: (lbs)</label>
+                  <label for="weight" class="form-label">Weight: (lbs)<span style="color: red;">*</span></label>
                   <input type="text" class="form-control" id="weight"
-                    placeholder="Weight" required>
+                    placeholder="Weight" required name="ship_weight">
                 </div>
                 <div class="col-lg-6">
-                  <label for="phone_number" class="form-label">Ship From:</label>
+                  <label for="phone_number" class="form-label">Ship From:<span style="color: red;">*</span></label>
                   <input type="tel" class="form-control" id="ship_from"
-                    placeholder="Ship From" required>
+                    placeholder="Ship From" required name="ship_from">
                 </div>
               </div>
 
               <div class="row pt-3">
                 <div class="col-lg-12">
                   <label for="exampleFormControlTextarea1" class="form-label">Shipment
-                    Details:</label>
+                    Details:<span style="color: red;">*</span></label>
                   <textarea class="form-control"
-                    id="exampleFormControlTextarea1" placeholder="Please enter as much detail as possible about your shipment" rows="3" required></textarea>
+                    id="exampleFormControlTextarea1" placeholder="Please enter as much detail as possible about your shipment" rows="3"
+                    required name="details"></textarea>
                 </div>
               </div>
-              <div class="col-12 pb-5 pt-4">
+              <div class="col-12 pb-3 pt-4">
                 <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="submit" class="btn btn-outline-primary">Reset</button>
+                <button type="reset" class="btn btn-outline-primary">Reset</button>
+                <!-- Validation success -->
+                <div class="alert alert-success d-flex align-items-center mt-3 d-none" role="alert" id="validation">
+                  <i class="fas fa-check-circle" style="margin-right: 8px;"></i>
+                  <div>
+                    Your quote request was submitted successfully.
+                  </div>
+                </div>
+                <!-- Validation error -->
+                <div class="alert alert-danger d-flex align-items-center mt-3 d-none" role="alert" id="validation_error">
+                  <i class="fas fa-exclamation-triangle" style="margin-right: 8px;"></i>
+                  <div>
+                    Your quote request was not submitted. Please try again.
+                  </div>
+                </div>
               </div>
             </form>
           </div>
@@ -549,10 +619,13 @@
               <a class="nav-link" href="careers.html#safety">Safety</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="careers.html#community">Community Support</a>
+              <a class="nav-link" href="careers.html#community">Community
+                Support</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.ippolitogroup.com/careers.php">Current Openings</a>
+              <a class="nav-link"
+                href="https://www.ippolitogroup.com/careers.php">Current
+                Openings</a>
             </li>
           </ul>
         </div>
@@ -564,7 +637,8 @@
               <a class="nav-link" href="about.html#about">Our Story</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html#green_initiatives">Green Initiatives</a>
+              <a class="nav-link" href="about.html#green_initiatives">Green
+                Initiatives</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html#accreditations">Accreditations</a>
@@ -573,7 +647,8 @@
               <a class="nav-link" href="about.html#technology">Technology</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html#awards">Awards &amp; Recognition</a>
+              <a class="nav-link" href="about.html#awards">Awards &amp;
+                Recognition</a>
             </li>
           </ul>
         </div>
@@ -594,7 +669,8 @@
               <a class="nav-link" href="resources.html#claims-form">Claims Form</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="resources.html#terms">Terms &amp; Conditions</a>
+              <a class="nav-link" href="resources.html#terms">Terms &amp;
+                Conditions</a>
             </li>
           </ul>
         </div>
@@ -637,31 +713,41 @@
       </footer>
       <div class="row align-items-center" id="footer-bottom">
         <div class="col-lg-4">
-        <p class="mt-2">Copyright © 2021 Ippolito Transportation Inc. All Rights
-          Reserved.</p>
+          <p class="mt-2">Copyright © 2021 Ippolito Transportation Inc. All
+            Rights
+            Reserved.</p>
         </div>
         <div class="col-lg-4">
           <div class="col-sm text-center" id="bottom-links">
             <a href="privacy.html" class="mr-2">Privacy Policy</a>
             |
-            <a href="http://ippolitogroup.com" target="_blank" class="ml-2">The Ippolito Group</a>
-        </div>
+            <a href="http://ippolitogroup.com" target="_blank" class="ml-2">The
+              Ippolito Group</a>
+          </div>
         </div>
         <div class="col-lg-4">
           <ul class="nav justify-content-end" id="social-icons">
             <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://www.linkedin.com/company/ippolitogroup/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              <a class="nav-link" target="_blank"
+                href="https://www.linkedin.com/company/ippolitogroup/"><i
+                  class="fab fa-linkedin" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://www.instagram.com/theippolitogroup/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              <a class="nav-link" target="_blank"
+                href="https://www.instagram.com/theippolitogroup/"><i class="fab
+                  fa-instagram" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://www.facebook.com/IppolitoGroup"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+              <a class="nav-link" target="_blank"
+                href="https://www.facebook.com/IppolitoGroup"><i class="fab
+                  fa-facebook-square" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://twitter.com/IppolitoGroup"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+              <a class="nav-link" target="_blank"
+                href="https://twitter.com/IppolitoGroup"><i class="fab
+                  fa-twitter-square" aria-hidden="true"></i></a>
             </li>
-        </ul>
+          </ul>
         </div>
       </div>
 
