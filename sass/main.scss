@@ -36,6 +36,16 @@ p {
         h3 {
             padding-top: 16px !important;
         }
+
+        padding: 16px !important;
+    }
+
+    #blue_con {
+        padding: 16px !important;
+    }
+
+    #technology {
+        padding: 16px !important;
     }
 
     .btn-service {
@@ -92,6 +102,42 @@ p {
             padding-top: 16px;
         }
     }
+
+    #directory .btn-group {
+        display: block;
+        margin: 0 auto;
+        padding-top: 16px;
+    }
+
+    #contact-page {
+        #half-hero {
+            height: auto;
+
+            h1 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    #about-page {
+        #half-hero {
+            height: auto;
+            padding: 16px !important;
+
+            h1 {
+                font-size: 60px;
+            }
+        }
+
+.about-text {
+    padding: 16px !important; 
+}
+
+.about-titles {
+    padding: 16px !important;
+}
+
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -100,7 +146,70 @@ p {
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { }
+@media (min-width: 768px) { 
+    #resources {
+        p, h1, h3 {
+            padding-left: 16px;
+        }
+    }
+
+    #half-hero {
+        height: auto;
+    }
+
+    #about {
+        padding-left: 16px;
+
+        .ippolito-img {
+            margin-bottom: 40px;
+        }
+    }
+
+    #safety {
+        .ippolito-img {
+            margin-bottom: 40px;
+        }
+
+        p, h3, h1 {
+            padding-left: 16px;
+        }
+    }
+
+    #drivers {
+        padding-left: 16px;
+    }
+
+
+    #collapse_wrap {
+        p, h2 {
+            padding-left: 16px;
+        }
+    }
+
+    .about-titles {
+        padding-bottom : 0px !important;
+    }
+
+    .about-text {
+        padding-top: 8px !important;
+    }
+
+    #about-page {
+        .ippolito-img {
+            text-align: center;
+        }
+    }
+
+    #directory {
+        .btn-group {
+            display: block;
+        }
+
+        .btn-service {
+            margin: 4px;
+        }
+    }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { }
