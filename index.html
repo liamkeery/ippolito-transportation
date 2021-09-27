@@ -31,7 +31,7 @@
               // generate a five digit number for the quote_number variable
               this.quote_number.value = Math.random() * 100000 | 0;
               // these IDs from the previous steps
-              emailjs.sendForm('test_service', 'test_template', this)
+              emailjs.sendForm('smtp_service', 'quote_template', this)
                   .then(function() {
                       var validation = document.getElementById('validation');
                       validation.classList.remove("d-none");
@@ -475,29 +475,34 @@
             <form class="row align-items-center" id="quote-form">
               <input type="hidden" name="quote_number">
               <h3 class="form-heading">Personal Details</h3>
-              <small class="text-muted mb-2"><span style="color: red;">*</span> Required Field</small>
+              <small class="text-muted mb-2"><span style="color: red;">*</span>
+                Required Field</small>
               <hr>
               <div class="row">
                 <div class="col-lg-6">
-                  <label for="first_name" class="form-label">First Name:<span style="color: red;">*</span></label>
+                  <label for="first_name" class="form-label">Your Name:<span
+                      style="color: red;">*</span></label>
                   <input type="text" class="form-control" id="first_name"
                     placeholder="First Name" required name="fname">
                 </div>
                 <div class="col-lg-6">
-                  <label for="last_name" class="form-label">Last Name:<span style="color: red;">*</span></label>
-                  <input type="text" class="form-control" id="last_name"
-                    placeholder="Last Name" required name="lname">
+                  <label for="company" class="form-label">Company Name:<span
+                      style="color: red;">*</span></label>
+                  <input type="text" class="form-control" id="company"
+                    placeholder="Company" required name="company">
                 </div>
               </div>
 
               <div class="row pt-3">
                 <div class="col-lg-6">
-                  <label for="email" class="form-label">Email:<span style="color: red;">*</span></label>
+                  <label for="email" class="form-label">Email:<span
+                      style="color: red;">*</span></label>
                   <input type="email" class="form-control" id="email"
                     placeholder="Email" required name="email">
                 </div>
                 <div class="col-lg-6 pl-2">
-                  <label for="phone_number" class="form-label">Phone Number:<span style="color: red;">*</span></label>
+                  <label for="phone_number" class="form-label">Phone Number:<span
+                      style="color: red;">*</span></label>
                   <input type="tel" class="form-control" id="phone_number"
                     placeholder="Phone Number" required name="phone">
                 </div>
@@ -507,7 +512,8 @@
 
               <div class="row">
                 <div class="col-lg-6">
-                  <label class="form-label">Shipment Type:<span style="color: red;">*</span></label>
+                  <label class="form-label">Shipment Type:<span style="color:
+                      red;">*</span></label>
                   <br>
                   <div class="form-check form-check-inline pt-2">
                     <input class="form-check-input" type="radio"
@@ -528,22 +534,25 @@
                 </div>
 
                 <div class="col-lg-6">
-                  <label for="company" class="form-label">Company Name:<span style="color: red;">*</span></label>
-                  <input type="text" class="form-control" id="company"
-                    placeholder="Company" required name="company">
+                  <label for="ship_weight" class="form-label">Weight: (lbs)<span
+                      style="color: red;">*</span></label>
+                  <input type="text" class="form-control" id="weight"
+                    placeholder="Weight" required name="ship_weight">
                 </div>
               </div>
 
               <div class="row pt-3">
                 <div class="col-lg-6">
-                  <label for="weight" class="form-label">Weight: (lbs)<span style="color: red;">*</span></label>
-                  <input type="text" class="form-control" id="weight"
-                    placeholder="Weight" required name="ship_weight">
-                </div>
-                <div class="col-lg-6">
-                  <label for="phone_number" class="form-label">Ship From:<span style="color: red;">*</span></label>
+                  <label for="ship_from" class="form-label">Ship From:<span
+                      style="color: red;">*</span></label>
                   <input type="tel" class="form-control" id="ship_from"
                     placeholder="Ship From" required name="ship_from">
+                </div>
+                <div class="col-lg-6">
+                  <label for="ship_to" class="form-label">Ship To:<span
+                      style="color: red;">*</span></label>
+                  <input type="tel" class="form-control" id="ship_to"
+                    placeholder="Ship To" required name="ship_to">
                 </div>
               </div>
 
@@ -552,7 +561,8 @@
                   <label for="exampleFormControlTextarea1" class="form-label">Shipment
                     Details:<span style="color: red;">*</span></label>
                   <textarea class="form-control"
-                    id="exampleFormControlTextarea1" placeholder="Please enter as much detail as possible about your shipment" rows="3"
+                    id="exampleFormControlTextarea1" placeholder="Please enter
+                    as much detail as possible about your shipment" rows="3"
                     required name="details"></textarea>
                 </div>
               </div>
@@ -560,15 +570,18 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <button type="reset" class="btn btn-outline-primary">Reset</button>
                 <!-- Validation success -->
-                <div class="alert alert-success d-flex align-items-center mt-3 d-none" role="alert" id="validation">
+                <div class="alert alert-success d-flex align-items-center mt-3
+                  d-none" role="alert" id="validation">
                   <i class="fas fa-check-circle" style="margin-right: 8px;"></i>
                   <div>
                     Your quote request was submitted successfully.
                   </div>
                 </div>
                 <!-- Validation error -->
-                <div class="alert alert-danger d-flex align-items-center mt-3 d-none" role="alert" id="validation_error">
-                  <i class="fas fa-exclamation-triangle" style="margin-right: 8px;"></i>
+                <div class="alert alert-danger d-flex align-items-center mt-3
+                  d-none" role="alert" id="validation_error">
+                  <i class="fas fa-exclamation-triangle" style="margin-right:
+                    8px;"></i>
                   <div>
                     Your quote request was not submitted. Please try again.
                   </div>
