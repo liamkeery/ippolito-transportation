@@ -23,9 +23,34 @@ p {
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
+// @media (orientation: landscape) {
+//     #hero-content {
+//         margin-top: 16px !important;
+//     }
+// }
+
+@media (max-width: 320px) {
+    #hero {
+        height: auto;
+        padding-bottom: 32px;   
+    }
+
+    #hero-content {
+        padding-left: 16px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    #hero {
+        height: auto;
+        padding-bottom: 32px;
+    }
+}
+
 @media (max-width: 414px) {
     #hero-content {
         margin-top: 50px !important;
+        padding-left: 16px !important;
     }
 
     #about {
