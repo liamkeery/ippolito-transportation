@@ -3,7 +3,7 @@ footer {
 
     p {
         color: white !important;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 300;
     }
 
@@ -11,11 +11,12 @@ footer {
         color: white !important;
         font-family: $ippolito-font;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .nav-link {
         font-weight: 300;
+        padding-left: 0 !important;
     }
 
     .nav-link a:hover {
@@ -29,6 +30,7 @@ footer {
 
 .footer-hr {
     border: 2px solid #4074F7;
+    margin: 0 !important;
 }
 
 #footer-bottom {
